@@ -8,10 +8,12 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
+import Social from "./components/Social";
 
 
 ReactDOM.render(
   <Router>
+    <Social />
     <Header />
     <Routes>
       <Route path="/" element={<Hero />} />
