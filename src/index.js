@@ -9,6 +9,7 @@ import Hero from "./components/Hero";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Social from "./components/Social";
+import CarouselModule from "./components/CarouselModule";
 
 
 ReactDOM.render(
@@ -21,7 +22,7 @@ ReactDOM.render(
       <Route path="/menu" element={<Menu />} />
 
     </Routes>
-
+    <CarouselModule />
     <Footer />
   </Router >,
 

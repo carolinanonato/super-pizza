@@ -86,3 +86,42 @@ body {
   padding: 5px;
   
 }
+
+.last {
+  margin-right: 50px;
+}
+
+
+.new-flavours-title {
+ margin-bottom: 0;
+  text-transform: uppercase;
+  color: rgb(70, 13, 134);
+  text-align: center;
+  padding-top: 40px;
+  background-color:  rgb(238, 208, 72);
+  font-weight: bold;
+}
+.carousel {
+  
+  background-color:  rgb(238, 208, 72);
+}
+
+
+.carousel-box {
+  margin-top: 50px;
+  width: 100px;
+  height: 200px;
+}
+
+.new-flavour-img {
+  width: 150px;
+  height: 150px;
+}
+
+.new-flavours-subtitle {
+    font-weight: bold;
+    width: 150px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
