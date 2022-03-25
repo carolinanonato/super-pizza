@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../index.css"
+import cart from '../img/cart.png'
 
 
 
@@ -13,6 +14,7 @@ function Header() {
                 <Link className="menu-item" to="/">Home</Link>  {" "}
                 <Link className="menu-item" to="/menu" > Menu</Link >  {" "}
                 <Link className="menu-item" to="/contact" > Contact</Link >
+                <img src={cart} alt="cart" />
             </div>
 
 
