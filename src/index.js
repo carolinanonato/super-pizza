@@ -8,18 +8,18 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
-import Home from "./pages/Home";
+
 
 ReactDOM.render(
   <Router>
     <Header />
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Hero />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/menu" element={<Menu />} />
 
     </Routes>
-    <Hero />
+
     <Footer />
   </Router >,
 

@@ -1,16 +1,19 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../index.css"
 
 
 
 function Header() {
     return (
-        <nav className="d-flex p-2" >
-            <h1>SUPER PIZZA</h1>
-            <Link to="/">Home</Link> | {" "}
-            <Link to="/menu" > Menu</Link > | {" "}
-            <Link to="/contact" > Contact</Link >
+        <nav className="navigation" >
+            <h1 className="logo">SUPER PIZZA</h1>
+            <div className="menu">
+                <Link className="menu-item" to="/">Home</Link>  {" "}
+                <Link className="menu-item" to="/menu" > Menu</Link >  {" "}
+                <Link className="menu-item" to="/contact" > Contact</Link >
+            </div>
 
 
         </nav >
