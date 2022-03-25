@@ -16,13 +16,14 @@ ReactDOM.render(
   <Router>
     <Social />
     <Header />
+
     <Routes>
       <Route path="/" element={<Hero />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/menu" element={<Menu />} />
 
     </Routes>
-    <CarouselModule />
+
     <Footer />
   </Router >,
 
