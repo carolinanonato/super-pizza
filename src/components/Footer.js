@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <div className='footer'>
             <div className='footer-text'>
-                <p class="name-footer">SUPER PIZZA RESTAURANT</p>
+                <p className="name-footer">SUPER PIZZA RESTAURANT</p>
                 <p>396 BROWNS LINE <br></br>
                     ETOBICOKE, ON, M8W 3T8<br></br>
                     (416) 251-7080

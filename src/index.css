@@ -173,3 +173,27 @@ body {
 .hours-title {
   font-weight: bold;
 }
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 30px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  font-size: 12px;
+  flex: 0 0 auto;         
+  display: flex;        
+  flex-direction: column; 
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
