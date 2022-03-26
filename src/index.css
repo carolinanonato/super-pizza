@@ -14,6 +14,9 @@ body {
   background-color: rgb(231, 78, 78);
   color: white;
   font-family: 'Rubik', sans-serif;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
   
   
 }
@@ -58,6 +61,7 @@ body {
   background-color: rgb(231, 78, 78);
   height: 100%;
   display: flex;
+  padding-top: 100px;
 }
 
 .bigpizza {
@@ -180,20 +184,102 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-top: 30px;
+  padding-top: 20px;
+  background-color: rgb(231, 78, 78);;
+  
 }
 
 .card {
   position: relative;
-  width: 300px;
-  font-size: 12px;
+  width: 400px;
+ text-align: center;
   flex: 0 0 auto;         
   display: flex;        
   flex-direction: column; 
+  margin-top: 20px;
+  padding: 50px;
+  padding-bottom: 20px;
+  margin-left: 30px;
+  border: 2px solid rgb(231, 78, 78) !important;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.507);
+  margin-bottom: 30px;
+  
 }
 
-.card--image {
-  width: 100%;
-  border-radius: 9px;
-  margin-bottom: 9px;
+.card-img {
+  width: 100px;
+ 
+}
+
+.card-title {
+font-size: 30px;
+margin-top: 20px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter > button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(231, 78, 78);
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  margin: 5px;
+  
+}
+
+.counter > button:hover {
+  background-color: rgb(238, 208, 72);
+  color: black;
+}
+
+.counter > button:focus {
+  outline: none;
+}
+
+.counter--count {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  
+}
+
+
+.counter--plus {
+  margin-left: -20px;
+}
+
+.counter--minus {
+  margin-right: -20px;
+  z-index: 1;
+}
+
+.menu-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+ color: white;
+ padding-top: 30px;
+  background-color: rgb(231, 78, 78);
+  margin: 0;
+}
+
+.price {
+  font-size: 25px;
+  color: rgb(231, 78, 78);
+  font-weight: bold;
+
 }
