@@ -9,7 +9,7 @@ import cart from '../img/cart.png'
 function Header() {
     return (
         <nav className="navigation" >
-            <h1 className="logo">SUPER PIZZA</h1>
+            <Link to="/"><h1 className="logo">SUPER PIZZA</h1></Link>
             <div className="menu">
                 <Link className="menu-item" to="/">Home</Link>  {" "}
                 <Link className="menu-item" to="/menu" > Menu</Link >  {" "}

@@ -24,4 +24,5 @@ export default function Menu() {
             <div className="cards-list">{cards}</div>
         </>
     )
+
 }

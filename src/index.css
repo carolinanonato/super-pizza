@@ -184,7 +184,7 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  padding-top: 50px;
+  padding-top: 40px;
   background-color: rgb(231, 78, 78);;
   
 }
@@ -283,4 +283,12 @@ margin-top: 20px;
   color: rgb(231, 78, 78);
   font-weight: bold;
 
+}
+
+.h1-count {
+  font-size: 30px;
+}
+
+.contact {
+ padding-top: 100px;
 }

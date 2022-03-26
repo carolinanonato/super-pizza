@@ -28,7 +28,7 @@ export default function Card(props) {
             <div className="counter">
                 <button className="counter--minus" onClick={subtract}>–</button>
                 <div className="counter--count">
-                    <h1>{count}</h1>
+                    <h1 className='h1-count'>{count}</h1>
                 </div>
                 <button className="counter--plus" onClick={add}>+</button>
             </div>
