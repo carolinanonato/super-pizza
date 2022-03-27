@@ -21,17 +21,15 @@ body {
   
 }
 
-.logo {
+.logo-img {
   float: left;
-  color: #f2f2f2;
+  max-width: 300px;
+  max-height: 100px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
   padding: 20px;
-  margin-top: 30px;
-  margin-left: 30px;
-
+  margin-left: 10px;
+  margin-top: 20px;
+ 
 }
 
 .menu {
@@ -57,6 +55,29 @@ body {
 .menu-item:hover {
   color: rgb(233, 213, 33)
 }
+
+.social-media{
+  background-color: rgb(231, 78, 78);
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  z-index: 5;
+  
+
+ 
+}
+.social-item {
+  margin-right: 10px;
+  padding: 5px;
+  
+}
+
+.last {
+  margin-right: 50px;
+}
+
+
+
 .hero {
   background-color: rgb(231, 78, 78);
   height: 100%;
@@ -83,22 +104,27 @@ body {
   margin-left: 60px;
 }
 
-.social-media{
-  background-color: rgb(231, 78, 78);
-  position: absolute;
-  right: 0;
-  margin-top: 8px;
 
- 
-}
-.social-item {
-  margin-right: 10px;
-  padding: 5px;
+/* .cart-icon {
+  display: relative;
   
-}
+} */
 
-.last {
-  margin-right: 50px;
+.cart-counter {
+  display: absolute;
+  background-color: white;
+  color: black;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 15px;
+  margin-left: 5px;
+
+
 }
 
 

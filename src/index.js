@@ -15,8 +15,9 @@ import Social from "./components/Social";
 
 ReactDOM.render(
   <Router>
-    <Social />
+
     <Header />
+
 
     <Routes>
       <Route path="/" element={<Hero />} />
