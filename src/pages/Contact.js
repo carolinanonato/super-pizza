@@ -1,17 +1,20 @@
 import React from 'react'
+import ContactForm from '../components/ContactForm'
 import MapContainer from '../components/MapContainer'
 
 export default function Contact() {
     return (
         <div className='contact'>
-            <h1>
-                SUPER PIZZA RESTAURANT
-
-                396 BROWNS LINE
-                ETOBICOKE, ON, M8W 3T8
-                (416) 251-7080
+            <h1 className="directions">
+                CONTACT FORM
+            </h1>
+            <ContactForm />
+            <h1 className="directions">
+                DIRECTIONS
             </h1>
             <MapContainer />
+
+
         </div>
     )
 }
