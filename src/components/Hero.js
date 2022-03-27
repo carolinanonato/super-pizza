@@ -10,7 +10,7 @@ export default function Hero() {
         <>
             <div className='hero'>
                 <img className="bigpizza" src={pizza} alt="pizza" />
-                <p className='hero-text'>The best pizza <br></br><span class="inyour">in your</span> neighborhood</p>
+                <p className='hero-text'>The best pizza <br></br><span className="inyour">in your</span> neighborhood</p>
 
 
             </div>
