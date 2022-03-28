@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../index.css"
-import cart from '../img/cart.png'
 import logo from '../img/superpizza_logo.png'
 import Social from './Social';
 

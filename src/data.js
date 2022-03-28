@@ -25,7 +25,7 @@ const data = {
 
         {
             id: 4,
-            title: "Mandarawesome",
+            title: "Mandarine",
             ingredients: "Mandarin orange, sliced almonds, olives, peas.",
             price: 9.95,
             img: "https://pngimg.com/uploads/pizza/pizza_PNG7113.png"

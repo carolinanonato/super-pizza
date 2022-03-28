@@ -11,7 +11,7 @@ export default function Basket(props) {
         <aside className="shopping-cart">
             <h2 class="cart-title">Cart Items</h2>
             <div>
-                {cartItems.length === 0 && <div class="empty">Cart is empty</div>}
+                {cartItems.length === 0 && <div className="empty">Cart is empty</div>}
                 {cartItems.map((item) => (
                     <div className="item-check">
                         <div key={item.id} className="">

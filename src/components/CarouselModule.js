@@ -20,7 +20,7 @@ export default function CarouselModule() {
                     <div className='carousel-box'><img className="new-flavour-img" src={flavour1} alt="" /><p className="new-flavours-subtitle" >Bacon Pepper</p></div>
                     <div className='carousel-box'><img className="new-flavour-img" src={flavour2} alt="" /><p className="new-flavours-subtitle">Napoletana</p></div>
                     <div className='carousel-box'><img className="new-flavour-img" src={flavour3} alt="" /><p className="new-flavours-subtitle">Crazy Shrooms</p></div>
-                    <div className='carousel-box'><img className="new-flavour-img" src={flavour1} alt="" /><p className="new-flavours-subtitle">Bacon Pepper</p></div>
+                    <div className='carousel-box'><img className="new-flavour-img" src={flavour1} alt="" /><p className="new-flavours-subtitle">New Bacon</p></div>
                     <div className='carousel-box'><img className="new-flavour-img" src={flavour2} alt="" /><p className="new-flavours-subtitle">Napolitana</p></div>
                     <div className='carousel-box'><img className="new-flavour-img" src={flavour3} alt="" /><p className="new-flavours-subtitle">Mushrooms</p></div>
                     <div className='carousel-box'><img className="new-flavour-img" src={flavour1} alt="" /><p className="new-flavours-subtitle">Bacon Pepper</p></div>

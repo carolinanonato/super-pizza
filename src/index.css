@@ -3,11 +3,12 @@ body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
   position: relative; 
- 
   
+ 
 }
 
 
+/******************************** Home Page ****************************/
 
 .navigation {
   overflow: hidden;
@@ -420,4 +421,121 @@ textarea {
 
 .hours-title {
   font-weight: bold;
+}
+
+
+
+/********************* Smaller Screens **********************/
+
+@media (max-width: 1200px) {
+  .hero-text {
+    font-size: 50px;
+    
+    margin-top: 100px;
+    margin-left: 30px;
+  
+  }
+
+  .shopping-cart {
+    width: 600px;
+    
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .hero-text {
+    font-size: 40px;
+  
+  }
+
+  .name-footer {
+    font-size: 15px;
+  }
+
+  .address {
+    font-size: 15px;
+  }
+  .hours{
+   font-size: 15px;
+  }
+
+  .franchise {
+    font-size: 17px;
+  }
+
+  .shopping-cart {
+    width: 600px;
+    
+  }
+  .menu-image {
+    width: 40%;
+  }
+  .menu-page {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-text {
+    font-size: 30px;
+  }
+
+  .name-footer {
+    font-size: 10px;
+  }
+
+  .address {
+    font-size: 10px;
+  }
+  .hours{
+   font-size: 10px;
+  }
+
+  .franchise {
+    font-size: 12px;
+  }
+ 
+  .shopping-cart {
+    display: none;
+    
+  }
+}
+
+
+
+@media (max-width: 550px) {
+  .hero-text {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 130px;
+  
+  }
+  .bigpizza {
+    display: none;
+    
+  }
+
+  .name-footer {
+    font-size: 10px;
+  }
+
+  .address {
+    font-size: 10px;
+  }
+  .hours{
+   font-size: 10px;
+  }
+
+  .franchise {
+    font-size: 12px;
+  }
+
+  .menu-image {
+    width: 60%;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+
 }
