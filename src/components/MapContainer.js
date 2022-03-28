@@ -16,7 +16,7 @@ export default function MapContainer() {
 
         const createMarker = () => {
             return new window.google.maps.Marker({
-                position: center,
+                position: setCenter,
                 map,
                 draggable: true,
                 optimized: true
