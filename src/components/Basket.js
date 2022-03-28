@@ -9,22 +9,29 @@ export default function Basket(props) {
     const totalPrice = itemsPrice + taxPrice + shippingPrice;
     return (
         <aside className="shopping-cart">
-            <h2>Cart Items</h2>
+            <h2 class="cart-title">Cart Items</h2>
             <div>
-                {cartItems.length === 0 && <div>Cart is empty</div>}
+                {cartItems.length === 0 && <div class="empty">Cart is empty</div>}
                 {cartItems.map((item) => (
-                    <div key={item.id} className="row">
-                        <div className="col-2">{item.title}</div>
-                        <div className="col-2">
-                            <button onClick={() => onRemove(item)} className="remove">
-                                -
-                            </button>{' '}
-                            <button onClick={() => onAdd(item)} className="add">
-                                +
-                            </button>
-                        </div>
+                    <div className="item-check">
+                        <div key={item.id} className="">
+                            <div className="">{item.title}</div>
+                            <div className="">
+                                <div className="add-remove">
+                                    <button onClick={() => onRemove(item)} className="remove">
+                                        -
+                                    </button>{' '}
+                                    <button onClick={() => onAdd(item)} className="add">
+                                        +
+                                    </button>
 
-                        <div className="col-2 text-right">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div className="cart-price">
                             {item.qty} x ${item.price.toFixed(2)}
                         </div>
                     </div>
@@ -33,23 +40,23 @@ export default function Basket(props) {
                 {cartItems.length !== 0 && (
                     <>
                         <hr></hr>
-                        <div className="row">
-                            <div className="col-2">Items Price</div>
+                        <div className="item-check">
+                            <div className="">Items Price</div>
                             <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
                         </div>
-                        <div className="row">
-                            <div className="col-2"> HST</div>
+                        <div className="item-check">
+                            <div className=""> HST</div>
                             <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
                         </div>
-                        <div className="row">
-                            <div className="col-2">Shipping Price</div>
+                        <div className="item-check">
+                            <div className="">Shipping Price</div>
                             <div className="col-1 text-right">
                                 ${shippingPrice.toFixed(2)}
                             </div>
                         </div>
 
-                        <div className="row">
-                            <div className="col-2">
+                        <div className="item-check">
+                            <div className="">
                                 <strong>Total Price</strong>
                             </div>
                             <div className="col-1 text-right">
@@ -57,8 +64,8 @@ export default function Basket(props) {
                             </div>
                         </div>
                         <hr />
-                        <div className="row">
-                            <button onClick={() => alert('Implement Checkout!')}>
+                        <div className="checkout-div">
+                            <button className="checkout-button" onClick={() => alert('Your order is being prepared!')}>
                                 Checkout
                             </button>
                         </div>

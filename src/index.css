@@ -147,6 +147,7 @@ body {
  padding-top: 150px;
  justify-content: space-between;
  background-color: rgb(231, 78, 78);
+ width: 100%;
 }
 
 .menu-title{
@@ -199,9 +200,97 @@ body {
   height: 500px;
   margin-top: 80px;
   margin-left: 20px;
+  
 }
 
 .add-pizza {
+  background-color: rgb(231, 78, 78);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+.cart-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+  margin-bottom: 30px;
+
+}
+
+.empty {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+button.add {
+  background-color: rgb(70, 13, 134);
+  width: 1.5rem;
+  color:white;
+  border-radius: 5px;
+ 
+}
+button.remove {
+  background-color: rgb(70, 13, 134);
+  width: 1.5rem;
+  color:white;
+  border-radius: 5px;
+}
+button.badge {
+  background-color: #f04040;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+
+.text-right {
+  text-align: right;
+  width: 100px;
+  
+}
+
+
+
+.cart-price {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 160px;
+  
+ 
+ 
+}
+
+.add-remove {
+  display: flex;
+  padding-left: 10px;
+  gap: 12px;
+}
+
+.item-check {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-left: 20px;
+}
+.checkout-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-button {
   background-color: rgb(231, 78, 78);
   color: white;
   border: none;
