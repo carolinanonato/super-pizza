@@ -1,40 +1,49 @@
 import React from 'react'
 import "../index.css";
+import Basket from './components/Basket';
+import Menu from ' ./pages/Menu'
+import data from './data';
+import { useState } from 'react';
 
 export default function Card(props) {
 
-    const [count, setCount] = React.useState(0)
-    function add() {
-        setCount(count + 1)
-    }
-
-    function subtract() {
-        setCount(count - 1)
-    }
+    const { products } = data;
+    const [cartItems, setCartItems] = useState([]);
+    const onAdd = (product) => {
+        const exist = cartItems.find((x) => x.id === product.id);
+        if (exist) {
+            setCartItems(
+                cartItems.map((x) =>
+                    x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
+                )
+            );
+        } else {
+            setCartItems([...cartItems, { ...product, qty: 1 }]);
+        }
+    };
+    const onRemove = (product) => {
+        const exist = cartItems.find((x) => x.id === product.id);
+        if (exist.qty === 1) {
+            setCartItems(cartItems.filter((x) => x.id !== product.id));
+        } else {
+            setCartItems(
+                cartItems.map((x) =>
+                    x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
+                )
+            );
+        }
+    };
     return (
+        <div className="App">
 
-        <div className="card">
-            <div className="first-card">
-                <img className="card-img" src={props.img} alt="" />
+            <div className="row">
+                <Menu products={products} onAdd={onAdd}></Menu>
+                <Basket
+                    cartItems={cartItems}
+                    onAdd={onAdd}
+                    onRemove={onRemove}
+                ></Basket>
             </div>
-            <div className="second-card">
-                <div className="info">
-                    <h1 className="card-title">{props.title}</h1>
-                    <p className="ingredients">{props.ingredients}</p>
-                    <span className="price">${props.price}</span>
-                </div>
-
-            </div>
-            <div className="counter">
-                <button className="counter--minus" onClick={subtract}>–</button>
-                <div className="counter--count">
-                    <h1 className='h1-count'>{count}</h1>
-                </div>
-                <button className="counter--plus" onClick={add}>+</button>
-            </div>
-
-        </div >
-
-
-    )
+        </div>
+    );
 }

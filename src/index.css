@@ -104,204 +104,86 @@ body {
   margin-left: 60px;
 }
 
-
-/* .cart-icon {
-  display: relative;
-  
-} */
-
-.cart-counter {
-  display: absolute;
-  background-color: white;
-  color: black;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 15px;
-  margin-left: 5px;
-
-
-}
-
-
 .new-flavours-title {
- margin-bottom: 0;
-  text-transform: uppercase;
-  color: rgb(70, 13, 134);
-  text-align: center;
-  padding-top: 40px;
-  background-color:  rgb(238, 208, 72);
-  font-weight: bold;
-}
-.carousel {
-  
-  background-color:  rgb(238, 208, 72);
-  padding-bottom: 20px;
-}
-
-
-.carousel-box {
-  margin-top: 50px;
-  width: 100px;
-  height: 200px;
-  margin-bottom: 50px;
-}
-
-.new-flavour-img {
-  width: 150px;
-  height: 150px;
-}
-
-.new-flavours-subtitle {
-    font-weight: bold;
-    width: 150px;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 20px;
-}
-
-.footer {
-  background-color:  rgb(231, 78, 78);
-  padding: 10px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-  
-}
-
-.footer-text {
-  margin-left: 30px;
-}
-
-.name-footer {
-  font-weight: bold;
-}
-
-
-.franchise {
-  background-color: rgb(70, 13, 134); 
-  height: 80px;
-  max-width: 500px;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  font-weight: 700;
-
-}
-
-.hours {
-  max-width: 300px;
-  margin-right: 30px;
-  
-}
-
-.hours-title {
-  font-weight: bold;
-}
-
-.cards-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  padding-top: 40px;
-  background-color: rgb(231, 78, 78);;
-  
-}
-
-.card {
-  position: relative;
-  width: 400px;
+  margin-bottom: 0;
+   text-transform: uppercase;
+   color: rgb(70, 13, 134);
+   text-align: center;
+   padding-top: 40px;
+   background-color:  rgb(238, 208, 72);
+   font-weight: bold;
+ }
+ .carousel {
+   
+   background-color:  rgb(238, 208, 72);
+   padding-bottom: 20px;
+ }
  
- text-align: center;
-  flex: 0 0 auto;         
-  display: flex;        
-  flex-direction: column; 
-  margin-top: 20px;
-  padding: 50px;
-  padding-bottom: 20px;
-  margin-left: 30px;
-  border: 2px solid rgb(231, 78, 78) !important;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.507);
-  margin-bottom: 30px;
-  
-}
-
-.card-img {
-  width: 100px;
  
-}
+ .carousel-box {
+   margin-top: 50px;
+   width: 100px;
+   height: 200px;
+   margin-bottom: 50px;
+ }
+ 
+ .new-flavour-img {
+   width: 150px;
+   height: 150px;
+ }
+ 
+ .new-flavours-subtitle {
+     font-weight: bold;
+     width: 150px;
+     margin-top: 10px;
+     text-align: center;
+     font-size: 20px;
+ }
 
-.card-title {
-font-size: 30px;
-margin-top: 20px;
-}
 
-.counter {
+/*************************** Menu page **********************/
+.menu-page {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.counter > button {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background-color: rgb(231, 78, 78);
-  color: #ffffff;
-  font-size: 1rem;
-  text-align: center;
-  margin: 5px;
-  
-}
-
-.counter > button:hover {
-  background-color: rgb(238, 208, 72);
-  color: black;
-}
-
-.counter > button:focus {
-  outline: none;
-}
-
-.counter--count {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 20px;
-  
-}
-
-
-.counter--plus {
-  margin-left: -20px;
-}
-
-.counter--minus {
-  margin-right: -20px;
-  z-index: 1;
-}
-
-.menu-text {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 60px;
- color: white;
  padding-top: 150px;
+ justify-content: space-between;
+ background-color: rgb(231, 78, 78);
+}
+
+.menu-title{
   background-color: rgb(231, 78, 78);
-  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  
+}
+
+.all-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding-top: 40px;
+  background-color: rgb(231, 78, 78);
+  align-items: center;
+  text-align: center;
+  flex: 0 0 auto;    
+  border: 2px solid rgb(231, 78, 78) !important;
+}
+
+ .card {
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.507);
+  margin-bottom: 30px;    
+  margin-left: 30px; 
+  padding: 10px;
+  
+ }
+
+.menu-image {
+  width: 200px;
+  
+ 
 }
 
 .price {
@@ -311,10 +193,24 @@ margin-top: 20px;
 
 }
 
-.h1-count {
-  font-size: 30px;
+.shopping-cart {
+  width: 350px;
+  background-color: rgb(238, 208, 72);
+  height: 500px;
+  margin-top: 80px;
+  margin-left: 20px;
 }
 
+.add-pizza {
+  background-color: rgb(231, 78, 78);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/******************* Contact Page **********************/
 .contact {
  padding-top: 100px;
 }
@@ -394,4 +290,45 @@ textarea {
 .form > button:hover {
   background-color: rgba(231, 78, 78, 0.822);
   color: black;
+}
+/********************************** Footer *********************/
+
+.footer {
+  background-color:  rgb(231, 78, 78);
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  
+}
+
+.footer-text {
+  margin-left: 30px;
+}
+
+.name-footer {
+  font-weight: bold;
+}
+
+
+.franchise {
+  background-color: rgb(70, 13, 134); 
+  height: 80px;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+
+}
+
+.hours {
+  max-width: 300px;
+  margin-right: 30px;
+  
+}
+
+.hours-title {
+  font-weight: bold;
 }

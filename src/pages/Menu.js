@@ -1,28 +1,48 @@
-import React from 'react'
-import Card from "../components/Card";
-import data from "../data"
+import Main from '../components/Main';
+import Basket from '../components/Basket';
+import data from '../data';
+import "../index.css"
 
-export default function Menu() {
-    const cards = data.map(item => {
-        return (
-
-            <Card
-                key={item.id}
-                img={item.img}
-                title={item.title}
-                ingredients={item.ingredients}
-                price={item.price}
-
-            />
-
-        )
-    })
-
+import { useState } from 'react';
+function Menu() {
+    const { products } = data;
+    const [cartItems, setCartItems] = useState([]);
+    const onAdd = (product) => {
+        const exist = cartItems.find((x) => x.id === product.id);
+        if (exist) {
+            setCartItems(
+                cartItems.map((x) =>
+                    x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
+                )
+            );
+        } else {
+            setCartItems([...cartItems, { ...product, qty: 1 }]);
+        }
+    };
+    const onRemove = (product) => {
+        const exist = cartItems.find((x) => x.id === product.id);
+        if (exist.qty === 1) {
+            setCartItems(cartItems.filter((x) => x.id !== product.id));
+        } else {
+            setCartItems(
+                cartItems.map((x) =>
+                    x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
+                )
+            );
+        }
+    };
     return (
-        <>
-            <h1 class="menu-text">Menu</h1>
-            <div className="cards-list">{cards}</div>
-        </>
-    )
+        <div className="App">
 
+            <div className="menu-page">
+                <Main products={products} onAdd={onAdd}></Main>
+                <Basket
+                    cartItems={cartItems}
+                    onAdd={onAdd}
+                    onRemove={onRemove}
+                ></Basket>
+            </div>
+        </div>
+    );
 }
+export default Menu;
