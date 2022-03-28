@@ -2,7 +2,7 @@ import React from 'react'
 import "../index.css"
 import pizza from '../img/bigpizza.png'
 import CarouselModule from './CarouselModule'
-import MapContainer from './MapContainer'
+
 
 
 export default function Hero() {
