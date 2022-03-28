@@ -17,8 +17,7 @@ function Header() {
                 <Link className="menu-item" to="/">Home</Link>  {" "}
                 <Link className="menu-item" to="/menu" > Menu</Link >  {" "}
                 <Link className="menu-item" to="/contact" > Contact</Link >
-                <img className="cart-icon" src={cart} alt="cart" />
-                <p className='cart-counter'>0</p>
+
             </div>
 
 
