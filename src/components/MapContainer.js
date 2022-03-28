@@ -6,7 +6,7 @@ export default function MapContainer() {
     const MapComponent = () => {
         const ref = useRef()
         const [map, setMap] = useState(null)
-        const [center] = useState({ lat: 43.601200, lng: -79.545330 })
+        const [center, setCenter] = useState({ lat: 43.601200, lng: -79.545330 })
 
         useEffect(() => {
             if (ref.current && !map) {
