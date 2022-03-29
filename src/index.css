@@ -198,9 +198,11 @@ body {
 .shopping-cart {
   width: 350px;
   background-color: rgb(238, 208, 72);
-  height: 500px;
+  height: 100%;
   margin-top: 80px;
   margin-left: 20px;
+  box-sizing: content-box;
+  
   
 }
 
@@ -298,6 +300,7 @@ button.badge {
   padding: 5px 10px;
   border-radius: 5px;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /******************* Contact Page **********************/
@@ -557,9 +560,6 @@ textarea {
     margin-left: 0;
   }
 
-  .new-flavour-img {
- 
-  }
 
   .footer-text {
     margin-right: 10px;

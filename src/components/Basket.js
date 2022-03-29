@@ -8,7 +8,7 @@ export default function Basket(props) {
     const shippingPrice = 8.90;
     const totalPrice = itemsPrice + taxPrice + shippingPrice;
     return (
-        <aside className="shopping-cart">
+        <div className="shopping-cart">
             <h2 class="cart-title">Cart Items</h2>
             <div>
                 {cartItems.length === 0 && <div className="empty">Cart is empty</div>}
@@ -72,6 +72,6 @@ export default function Basket(props) {
                     </>
                 )}
             </div>
-        </aside>
+        </div>
     );
 }
