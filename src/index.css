@@ -539,3 +539,63 @@ textarea {
   }
 
 }
+
+@media (max-width: 550px) {
+  .logo-img {
+    margin-top: 40px;
+  }
+
+  .menu {
+    margin-top: 0;
+  }
+
+  .heto-text{
+    text-align: center;
+  }
+
+  .inyour {
+    margin-left: 0;
+  }
+
+  .new-flavour-img {
+ 
+  }
+
+  .footer-text {
+    margin-right: 10px;
+  }
+  
+  .name-footer {
+    margin-bottom: 0;
+  }
+  .hours {
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 0;
+    font-size: 9px;
+  }
+
+  .franchise-text {
+    font-size: 10px;
+  }
+
+  .franchise {
+    height: 110px;
+  }
+
+  input {
+    width: 200px !important;
+  }
+textarea {
+  width: 200px !important;
+}
+
+.form > button {
+  font-size: 20px;
+  padding: 10px;
+}
+.card {
+  margin-right: 5px;
+
+}
+}

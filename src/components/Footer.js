@@ -11,7 +11,7 @@ export default function Footer() {
                 </p>
             </div>
             <div className='franchise'>
-                <p>INTERESTED IN OWNING YOUR OWN SUPER PIZZA FRANCHISE?
+                <p className='franchise-text'>INTERESTED IN OWNING YOUR OWN SUPER PIZZA FRANCHISE?
                     VIEW OUR FRANCHISING INFORMATION</p></div>
 
             <p className='hours'><span className='hours-title'>HOURS</span><br></br>
